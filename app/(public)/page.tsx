@@ -5,10 +5,10 @@ import { services } from "@/lib/techmanna";
 export default function Home() {
   return (
     <div className="mx-auto w-full max-w-6xl px-6 pb-24">
-      <section className="relative overflow-hidden rounded-[28px] border border-border bg-background px-6 py-14 md:px-10">
+      <section className="tm-animate-fade-up relative overflow-hidden rounded-[28px] border border-border bg-background px-6 py-14 md:px-10">
         <div className="pointer-events-none absolute inset-0 -z-10">
-          <div className="absolute -top-32 left-1/2 h-80 w-[720px] -translate-x-1/2 rounded-full bg-border/50 blur-3xl" />
-          <div className="absolute -bottom-32 left-1/3 h-72 w-[560px] -translate-x-1/2 rounded-full bg-border/40 blur-3xl" />
+          <div className="tm-animate-float-slower absolute -top-32 left-1/2 h-80 w-[720px] -translate-x-1/2 rounded-full bg-accent/15 blur-3xl" />
+          <div className="tm-animate-float-slow absolute -bottom-32 left-1/3 h-72 w-[560px] -translate-x-1/2 rounded-full bg-border/40 blur-3xl" />
         </div>
 
         <div className="grid grid-cols-1 items-center gap-10 md:grid-cols-12">
@@ -31,13 +31,13 @@ export default function Home() {
             <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:items-center">
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center rounded-xl bg-accent px-5 py-3 text-sm font-semibold text-background transition-opacity hover:opacity-90"
+                className="inline-flex items-center justify-center rounded-xl bg-accent px-5 py-3 text-sm font-semibold text-background transition-all hover:-translate-y-0.5 hover:shadow-md"
               >
                 Book a Free Consultation
               </Link>
               <Link
                 href="/services"
-                className="inline-flex items-center justify-center rounded-xl border border-border bg-background px-5 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-border/40"
+                className="inline-flex items-center justify-center rounded-xl border border-border bg-background px-5 py-3 text-sm font-semibold text-foreground transition-all hover:-translate-y-0.5 hover:bg-border/40"
               >
                 Explore Services
               </Link>
@@ -91,7 +91,7 @@ export default function Home() {
             <Link
               key={service.slug}
               href={`/services/${service.slug}`}
-              className="group rounded-2xl border border-border bg-background p-6 transition-colors hover:bg-border/30"
+              className="group rounded-2xl border border-border bg-background p-6 transition-all hover:-translate-y-1 hover:bg-border/30 hover:shadow-sm"
             >
               <div className="text-base font-semibold">{service.name}</div>
               <div className="mt-2 text-sm leading-relaxed text-muted">

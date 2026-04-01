@@ -2,10 +2,10 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #111111;
-  --muted: #666666;
-  --accent: #000000;
-  --border: #eeeeee;
+  --foreground: #5d1903;
+  --muted: color-mix(in srgb, #5d1903 62%, #ffffff);
+  --accent: #e94b18;
+  --border: color-mix(in srgb, #5d1903 18%, #ffffff);
 }
 
 @theme inline {
@@ -20,18 +20,18 @@
 
 .dark {
   --background: #000000;
-  --foreground: #eeeeee;
-  --muted: #888888;
-  --accent: #ffffff;
-  --border: #1a1a1a;
+  --foreground: #ffffff;
+  --muted: color-mix(in srgb, #ffffff 70%, #000000);
+  --accent: #e94b18;
+  --border: color-mix(in srgb, #e94b18 22%, #000000);
 }
 
 .light {
   --background: #ffffff;
-  --foreground: #111111;
-  --muted: #666666;
-  --accent: #000000;
-  --border: #eeeeee;
+  --foreground: #5d1903;
+  --muted: color-mix(in srgb, #5d1903 62%, #ffffff);
+  --accent: #e94b18;
+  --border: color-mix(in srgb, #5d1903 18%, #ffffff);
 }
 
 body {
@@ -45,6 +45,41 @@ body {
 ::selection {
   background-color: var(--accent);
   color: var(--background);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes tm-fade-up {
+    from {
+      opacity: 0;
+      transform: translate3d(0, 10px, 0);
+    }
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  @keyframes tm-float {
+    0%,
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+    50% {
+      transform: translate3d(0, -12px, 0);
+    }
+  }
+
+  .tm-animate-fade-up {
+    animation: tm-fade-up 700ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+  }
+
+  .tm-animate-float-slow {
+    animation: tm-float 9s ease-in-out infinite;
+  }
+
+  .tm-animate-float-slower {
+    animation: tm-float 12s ease-in-out infinite;
+  }
 }
 
 /* Custom scrollbar */

@@ -30,7 +30,7 @@ export default function ServicesPage() {
   return (
     <div className="mx-auto w-full max-w-6xl px-6 pb-24">
       <div className="flex flex-col gap-12">
-        <header className="rounded-[28px] border border-border bg-background px-6 py-12 md:px-10">
+        <header className="tm-animate-fade-up rounded-[28px] border border-border bg-background px-6 py-12 md:px-10">
           <div className="text-xs font-semibold uppercase tracking-wider text-muted">
             Services
           </div>
@@ -44,7 +44,7 @@ export default function ServicesPage() {
           <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:items-center">
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center rounded-xl bg-accent px-5 py-3 text-sm font-semibold text-background transition-opacity hover:opacity-90"
+              className="inline-flex items-center justify-center rounded-xl bg-accent px-5 py-3 text-sm font-semibold text-background transition-all hover:-translate-y-0.5 hover:shadow-md"
             >
               Start a Project
             </Link>
@@ -62,7 +62,7 @@ export default function ServicesPage() {
             <Link
               key={service.slug}
               href={`/services/${service.slug}`}
-              className="group rounded-2xl border border-border bg-background p-6 transition-colors hover:bg-border/30"
+              className="group rounded-2xl border border-border bg-background p-6 transition-all hover:-translate-y-1 hover:bg-border/30 hover:shadow-sm"
             >
               <div className="text-base font-semibold">{service.name}</div>
               <div className="mt-2 text-sm leading-relaxed text-muted">
@@ -100,4 +100,3 @@ export default function ServicesPage() {
     </div>
   );
 }
-

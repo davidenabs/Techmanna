@@ -34,7 +34,7 @@ export default function ContactPage() {
   return (
     <div className="mx-auto w-full max-w-6xl px-6 pb-24">
       <div className="flex flex-col gap-12">
-        <header className="rounded-[28px] border border-border bg-background px-6 py-12 md:px-10">
+        <header className="tm-animate-fade-up rounded-[28px] border border-border bg-background px-6 py-12 md:px-10">
           <div className="text-xs font-semibold uppercase tracking-wider text-muted">
             Contact
           </div>
@@ -91,17 +91,17 @@ export default function ContactPage() {
                   <div className="mt-1 font-semibold text-foreground">
                     {siteConfig.address}
                   </div>
-                  <a
+                  {/* <a
                     href={mapsHref}
                     target="_blank"
                     rel="noreferrer"
                     className="mt-2 inline-flex text-sm font-semibold text-foreground underline underline-offset-4"
                   >
                     Open in Maps
-                  </a>
+                  </a> */}
                 </div>
 
-                <div className="rounded-2xl border border-border bg-background px-4 py-3">
+                {/* <div className="rounded-2xl border border-border bg-background px-4 py-3">
                   <div className="text-xs font-semibold uppercase tracking-wider text-muted">
                     Company
                   </div>
@@ -116,7 +116,7 @@ export default function ContactPage() {
                       Privacy Policy
                     </Link>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
 
@@ -140,4 +140,3 @@ export default function ContactPage() {
     </div>
   );
 }
-

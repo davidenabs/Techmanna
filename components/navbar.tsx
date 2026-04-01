@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
@@ -52,15 +53,14 @@ export function Navbar() {
           className="inline-flex items-center gap-2 font-semibold tracking-tight"
           aria-label="Techmanna home"
         >
-          <span
-            className="text-lg tracking-tight"
-            style={{ fontFamily: "var(--font-logo)" }}
-          >
-            Techmanna
-          </span>
-          <span className="rounded-md border border-border px-2 py-1 text-[10px] font-semibold uppercase tracking-wider text-muted">
-            RC 7331140
-          </span>
+          <Image
+            src="/logo.png"
+            alt="Techmanna"
+            width={160}
+            height={40}
+            className="h-auto w-40"
+            priority
+          />
         </Link>
 
         <div className="hidden items-center gap-7 md:flex">
@@ -88,7 +88,7 @@ export function Navbar() {
           <div className="flex items-center gap-3">
             <Link
               href="/contact"
-              className="rounded-xl bg-accent px-4 py-2 text-sm font-semibold text-background transition-opacity hover:opacity-90"
+              className="rounded-xl bg-accent px-4 py-2 text-sm font-semibold text-background transition-all hover:-translate-y-0.5 hover:shadow-md"
             >
               Book a Consultation
             </Link>

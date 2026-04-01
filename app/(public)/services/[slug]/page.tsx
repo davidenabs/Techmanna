@@ -49,7 +49,7 @@ export default function ServiceDetailPage({
   return (
     <div className="mx-auto w-full max-w-6xl px-6 pb-24">
       <div className="flex flex-col gap-12">
-        <header className="rounded-[28px] border border-border bg-background px-6 py-12 md:px-10">
+        <header className="tm-animate-fade-up rounded-[28px] border border-border bg-background px-6 py-12 md:px-10">
           <div className="text-xs font-semibold uppercase tracking-wider text-muted">
             Service
           </div>
@@ -62,13 +62,13 @@ export default function ServiceDetailPage({
           <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:items-center">
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center rounded-xl bg-accent px-5 py-3 text-sm font-semibold text-background transition-opacity hover:opacity-90"
+              className="inline-flex items-center justify-center rounded-xl bg-accent px-5 py-3 text-sm font-semibold text-background transition-all hover:-translate-y-0.5 hover:shadow-md"
             >
               Get Started
             </Link>
             <Link
               href="/services"
-              className="inline-flex items-center justify-center rounded-xl border border-border bg-background px-5 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-border/40"
+              className="inline-flex items-center justify-center rounded-xl border border-border bg-background px-5 py-3 text-sm font-semibold text-foreground transition-all hover:-translate-y-0.5 hover:bg-border/40"
             >
               Back to Services
             </Link>

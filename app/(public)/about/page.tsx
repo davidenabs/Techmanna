@@ -5,7 +5,7 @@ export default function About() {
   return (
     <div className="mx-auto w-full max-w-6xl px-6 pb-24">
       <div className="flex flex-col gap-14">
-        <section className="rounded-[28px] border border-border bg-background px-6 py-12 md:px-10">
+        <section className="tm-animate-fade-up rounded-[28px] border border-border bg-background px-6 py-12 md:px-10">
           <div className="grid grid-cols-1 gap-10 md:grid-cols-12 md:items-center">
             <div className="md:col-span-7">
               <div className="text-xs font-semibold uppercase tracking-wider text-muted">
@@ -23,13 +23,13 @@ export default function About() {
               <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:items-center">
                 <Link
                   href="/contact"
-                  className="inline-flex items-center justify-center rounded-xl bg-accent px-5 py-3 text-sm font-semibold text-background transition-opacity hover:opacity-90"
+                  className="inline-flex items-center justify-center rounded-xl bg-accent px-5 py-3 text-sm font-semibold text-background transition-all hover:-translate-y-0.5 hover:shadow-md"
                 >
                   Work With Us
                 </Link>
                 <Link
                   href="/services"
-                  className="inline-flex items-center justify-center rounded-xl border border-border bg-background px-5 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-border/40"
+                  className="inline-flex items-center justify-center rounded-xl border border-border bg-background px-5 py-3 text-sm font-semibold text-foreground transition-all hover:-translate-y-0.5 hover:bg-border/40"
                 >
                   Explore Services
                 </Link>
