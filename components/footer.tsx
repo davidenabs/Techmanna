@@ -45,6 +45,8 @@ export function Footer() {
                 { href: "/about", label: "About" },
                 { href: "/services", label: "Services" },
                 { href: "/contact", label: "Contact" },
+                { href: "/privacy", label: "Privacy Policy" },
+                { href: "/terms", label: "Terms of Service" },
               ]}
             />
           </div>
