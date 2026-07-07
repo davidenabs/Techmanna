@@ -20,7 +20,7 @@ const item = {
 
 export function ServicesGrid() {
   return (
-    <section id="services" className="py-24 md:py-32 bg-midnight relative z-10 border-b border-slate/30">
+    <section id="services" className="py-24 md:py-32 relative z-10 border-b border-slate/30">
       <div className="container mx-auto px-6 md:px-12">
         <div className="mb-16 md:mb-24 text-center">
           <motion.h2 

@@ -39,7 +39,7 @@ export function Footer() {
           </div>
         </div> */}
         
-        <div className="flex flex-col md:flex-row items-center justify-between gap-4 pt-8 border-t border-slate/30 text-xs font-mono text-muted">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-4 pt-8 text-xs font-mono text-muted">
           <p>&copy; {new Date().getFullYear()} Techmanna Studio. All rights reserved.</p>
           <div className="flex gap-4">
             <Link href="/privacy" className="hover:text-paper transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold rounded-sm">Privacy Policy</Link>
